@@ -1,8 +1,5 @@
-import HelloWorld from 'components/HelloWorld';
-import 'main.css';
+import MyApp from 'scripts/MyApp';
 
-const main = async () => {
-    HelloWorld();
-}
-
-main().then(() => console.log('Started'));
+document.addEventListener('DOMContentLoaded', () => {
+  MyApp.init();
+});
